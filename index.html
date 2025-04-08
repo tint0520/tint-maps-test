@@ -388,7 +388,7 @@ function renderFavorites() {
   
   <div class="top-banner">
   <div class="banner-text">Tint Maps</div>
-  <div class="banner-subtext">找附近的美業店家</div>
+  <div class="banner-subtext">僅為測試用,內容部分虛構</div>
 </div>
 
   <div id="map-view"></div>
@@ -498,22 +498,24 @@ z-index: 9999; box-shadow: 0 0 10px rgba(0,0,0,0.2); text-align:center;">
 z-index: 9998; background: rgba(255,255,255,0.95); display: flex; align-items: center;
 justify-content: center; flex-direction: column;">
   <div class="onboarding-step" id="step-1">
-    <h2 style="color:#d63384;">📦 滑動卡片</h2>
+    <h2 style="color:#d63384;">📸 卡片探店</h2>
     <p>左右滑動瀏覽所有店家</p>
+    <p>會依照妳的位置由近到遠推薦店家</p>
     <button onclick="nextStep(2)">下一步</button>
   </div>
   <div class="onboarding-step" id="step-2" style="display:none;">
-    <h2 style="color:#d63384;">⭐ 收藏功能</h2>
+    <h2 style="color:#d63384;">❤️ 收藏功能</h2>
     <p>點星星可收藏喜愛的店家</p>
     <button onclick="nextStep(3)">下一步</button>
   </div>
   <div class="onboarding-step" id="step-3" style="display:none;">
-    <h2 style="color:#d63384;">📍 地圖找店</h2>
-    <p>點選地圖圖標可查看店家</p>
+    <h2 style="color:#d63384;">🗺️ 地圖找店</h2>
+    <p>點選地圖桃紅色商家可查看店家卡片</p>
     <button onclick="endOnboarding()">我知道了</button>
   </div>
 </div>
 
+  
 <!-- ✅ 成長數據動畫浮窗 -->
 <div id="growth-toast" style="display:none; position:fixed; top:20px; left:50%; transform:translateX(-50%);
 background:#fff3f7; color:#d63384; font-weight:bold; font-size:15px; padding:12px 20px;
